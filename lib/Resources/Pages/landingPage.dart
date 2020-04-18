@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
-  static final name = "LandingPage";
+  static final name = "/LandingPage";
   @override
   _LandingPageState createState() => _LandingPageState();
 }

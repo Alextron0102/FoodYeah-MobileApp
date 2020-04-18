@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(//MaterialApp hace rutas entre pantallas
       title: 'Food Yeah',
-      initialRoute: RestTestPage.name,
+      initialRoute: LoginPage.name,
       routes:{
         LandingPage.name:(BuildContext context) => LandingPage(),
         LoginPage.name:(BuildContext context) => LoginPage(),

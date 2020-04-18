@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  static final name = "LoginPage";
+  static final name = "/LoginPage";
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -20,14 +20,19 @@ class _LoginPageState extends State<LoginPage> {
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0),
+            padding: EdgeInsets.fromLTRB(MediaQuery.of(context).size.width/5, MediaQuery.of(context).size.height/16, MediaQuery.of(context).size.width/5, 0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Center(
                   child: Image(
-                    image: AssetImage('assets/images/logo/logotransparent.png'),
+                    image: AssetImage('assets/images/logo/logotransparentcropped.png'),
+                    width: MediaQuery.of(context).size.width/2,
+                    height: MediaQuery.of(context).size.height/4,
                   ),
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height/8,
                 ),
                 Center(
                   child: TextField(
@@ -52,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Container(
-                  height: 40,
+                  height: MediaQuery.of(context).size.height/10,
                 ),
                 Center(
                   child: TextField(
@@ -76,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Container(
                   //vacio, espacio de separación:
-                  height: 60,
+                  height: MediaQuery.of(context).size.height/6,
                 ),
                 Center(
                   child: FlatButton(

@@ -58,7 +58,7 @@ class Album {
 }
 
 class RestTestPage extends StatefulWidget {
-  static final name = "RestTestPage";
+  static final name = "/RestTestPage";
   @override
   _RestTestPageState createState() => _RestTestPageState();
 }

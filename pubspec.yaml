@@ -44,6 +44,7 @@ flutter:
   assets:
     - assets/images/logo/logowhite.png
     - assets/images/logo/logotransparent.png
+    - assets/images/logo/logotransparentcropped.png
     - assets/images/background/cafeteria.jpg
     - assets/images/background/uni.jpg
   fonts:
