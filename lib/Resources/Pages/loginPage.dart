@@ -12,10 +12,10 @@ class _LoginPageState extends State<LoginPage> {
     return Stack(
       children: <Widget>[
         Image.asset(
-            'assets/images/background/uni.jpg',
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            fit: BoxFit.cover,
+          'assets/images/background/uni.jpg',
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.cover,
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
@@ -36,22 +36,19 @@ class _LoginPageState extends State<LoginPage> {
                       fontFamily: 'Solano',
                       color: Colors.white,
                       fontSize: 30.0,
-                      ),
+                    ),
                     cursorColor: Colors.white,
                     autocorrect: false,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                        enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white)
-                            ),
-                        contentPadding:
-                            EdgeInsets.only(bottom: 5.0, left: 5.0, right: 5.0),
-                        hintText: 'USUARIO',
-                        hintStyle: TextStyle(
-                          fontFamily: 'Solano',
-                          color: Colors.white
-                          ),
-                        ),
+                      enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white)),
+                      contentPadding:
+                          EdgeInsets.only(bottom: 5.0, left: 5.0, right: 5.0),
+                      hintText: 'USUARIO',
+                      hintStyle:
+                          TextStyle(fontFamily: 'Solano', color: Colors.white),
+                    ),
                   ),
                 ),
                 Container(
@@ -60,24 +57,21 @@ class _LoginPageState extends State<LoginPage> {
                 Center(
                   child: TextField(
                     style: TextStyle(
-                      fontSize: 30.0,
-                      fontFamily: 'Solano',
-                      color: Colors.white
-                      ),
+                        fontSize: 30.0,
+                        fontFamily: 'Solano',
+                        color: Colors.white),
                     cursorColor: Colors.white,
                     autocorrect: false,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                        enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white)),
-                        contentPadding:
-                            EdgeInsets.only(bottom: 5.0, left: 5.0, right: 5.0),
-                        hintText: 'CONTRASEÑA',
-                        hintStyle: TextStyle(
-                          fontFamily: 'Solano',
-                          color: Colors.white
-                          ),
-                        ),
+                      enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white)),
+                      contentPadding:
+                          EdgeInsets.only(bottom: 5.0, left: 5.0, right: 5.0),
+                      hintText: 'CONTRASEÑA',
+                      hintStyle:
+                          TextStyle(fontFamily: 'Solano', color: Colors.white),
+                    ),
                   ),
                 ),
                 Container(
@@ -96,14 +90,15 @@ class _LoginPageState extends State<LoginPage> {
                     textColor: Colors.white,
                     splashColor: Colors.grey,
                     color: Colors.red,
-                    padding: const EdgeInsets.fromLTRB(50, 10, 50.0, 5), //Definir que tan grande es el boton
+                    padding: const EdgeInsets.fromLTRB(
+                        50, 10, 50.0, 5), //Definir que tan grande es el boton
                     child: Text(
-                      'INGRESAR',                      
+                      'INGRESAR',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: 'Solano',
                         fontSize: 25,
-                        ),
+                      ),
                     ),
                   ),
                 )
