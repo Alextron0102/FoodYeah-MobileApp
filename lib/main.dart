@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+// import 'package:foodyeah/Resources/Pages/homePage.dart';
+// import 'package:foodyeah/Resources/Pages/loginPage.dart';
+// import 'package:foodyeah/Resources/Pages/restTestPage.dart';
 import 'package:foodyeah/Resources/Pages/landingPage.dart';
-import 'package:foodyeah/Resources/Pages/loginPage.dart';
-import 'package:foodyeah/Resources/Pages/restTestPage.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,11 +10,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(//MaterialApp hace rutas entre pantallas
       title: 'Food Yeah',
-      initialRoute: LoginPage.name,
+      //initialRoute: LandingPage.name,
+      home: LandingPage(),
       routes:{
+        //HomePage.name:(BuildContext context) => HomePage(),
+        //LoginPage.name:(BuildContext context) => LoginPage(),
+        //RestTestPage.name:(BuildContext context) => RestTestPage(),
         LandingPage.name:(BuildContext context) => LandingPage(),
-        LoginPage.name:(BuildContext context) => LoginPage(),
-        RestTestPage.name:(BuildContext context) => RestTestPage(),
       },
     );
   }

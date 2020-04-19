@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
-          body: SingleChildScrollView(
+          body: Container(
             padding: EdgeInsets.fromLTRB(MediaQuery.of(context).size.width/5, MediaQuery.of(context).size.height/16, MediaQuery.of(context).size.width/5, 0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                 Center(
                   child: FlatButton(
                     onPressed: () {
-                      print(1);
+                      //print(1);
                     },
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),

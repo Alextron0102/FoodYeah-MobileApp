@@ -1,5 +1,5 @@
 name: foodyeah
-description: FoodYeah! App.
+description: FoodYeah! App
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,10 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^3.0.0
   http: ^0.12.0
-  meta: ^1.1.6
-  equatable: ^1.0.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
@@ -30,9 +27,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mockito: ^4.1.1
-  test_coverage: ^0.4.0
-  bloc_test: ^3.0.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -47,10 +41,16 @@ flutter:
     - assets/images/logo/logotransparentcropped.png
     - assets/images/background/cafeteria.jpg
     - assets/images/background/uni.jpg
+    - assets/images/landing/platforms.png
+    - assets/images/landing/backgr4.jpg
+
   fonts:
     - family: Solano
       fonts:
         - asset: assets/fonts/SolanoGothicMVBStdBdCap.ttf
+    - family: Zisou
+      fonts:
+        - asset: assets/fonts/Zizou Slab-BoldItalic.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
